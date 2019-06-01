@@ -541,7 +541,7 @@ static void sprite_misc_update(rct_sprite* sprite)
             sprite_steam_particle_update((rct_steam_particle*)sprite);
             break;
         case SPRITE_MISC_MONEY_EFFECT:
-            money_effect_update(&sprite->money_effect);
+            sprite->money_effect.Update();
             break;
         case SPRITE_MISC_CRASHED_VEHICLE_PARTICLE:
             crashed_vehicle_particle_update((rct_crashed_vehicle_particle*)sprite);
@@ -642,31 +642,13 @@ void sprite_move(int16_t x, int16_t y, int16_t z, rct_sprite* sprite)
 
 void sprite_set_coordinates(int16_t x, int16_t y, int16_t z, rct_sprite* sprite)
 {
-    int16_t new_x = x, new_y = y, start_x = x;
-    switch (get_current_rotation())
-    {
-        case 0:
-            new_x = new_y - new_x;
-            new_y = (new_y + start_x) / 2 - z;
-            break;
-        case 1:
-            new_x = -new_y - new_x;
-            new_y = (new_y - start_x) / 2 - z;
-            break;
-        case 2:
-            new_x = -new_y + new_x;
-            new_y = (-new_y - start_x) / 2 - z;
-            break;
-        case 3:
-            new_x = new_y + new_x;
-            new_y = (-new_y + start_x) / 2 - z;
-            break;
-    }
+    CoordsXYZ coords3d = { x, y, z };
+    CoordsXY newCoords = translate_3d_to_2d_with_z(get_current_rotation(), coords3d);
 
-    sprite->generic.sprite_left = new_x - sprite->generic.sprite_width;
-    sprite->generic.sprite_right = new_x + sprite->generic.sprite_width;
-    sprite->generic.sprite_top = new_y - sprite->generic.sprite_height_negative;
-    sprite->generic.sprite_bottom = new_y + sprite->generic.sprite_height_positive;
+    sprite->generic.sprite_left = newCoords.x - sprite->generic.sprite_width;
+    sprite->generic.sprite_right = newCoords.x + sprite->generic.sprite_width;
+    sprite->generic.sprite_top = newCoords.y - sprite->generic.sprite_height_negative;
+    sprite->generic.sprite_bottom = newCoords.y + sprite->generic.sprite_height_positive;
     sprite->generic.x = x;
     sprite->generic.y = y;
     sprite->generic.z = z;

@@ -46,7 +46,7 @@ STR_0041    :3D 영화관
 STR_0042    :톱 스핀
 STR_0043    :스페이스 링
 STR_0044    :역방향 자유낙하 코스터
-STR_0045    :리프트
+STR_0045    :엘리베이터
 STR_0046    :수직 낙하 롤러코스터
 STR_0047    :현금 지급기
 STR_0048    :트위스트
@@ -135,7 +135,7 @@ STR_0552    :
 STR_0553    :
 STR_0554    :차량이 선형 유도 모터에 의해 긴 평지 트랙을 따라 가속된 뒤, 수직 상승 트랙에 의해 위로 상승한 뒤 다시 뒤로 자유낙하하여 탑승장에 돌아옵니다.
 STR_0555    :손님은 엘리베이터에 탑승하여 한쪽에서 다른쪽으로 이동할 수 있습니다.
-STR_0556    :폭이 넓은 차량이 수직으로 기울어진 트랙을 따라 내려오면서 최고의 자유 낙하를 경험하게 해줍니다.
+STR_0556    :폭이 넓은 차량이 수직으로 기울어진 트랙을 따라 내려오면서 최고의 자유 낙하를 경험할 수 있습니다.
 STR_0557    :
 STR_0558    :
 STR_0559    :
@@ -156,7 +156,7 @@ STR_0575    :공원 여기 저기로 사람들을 실어나르는, 단선 레일
 STR_0577    :특수한 반전 섹션에서 앞뒤가 바뀌는 나무 트랙을 달리는 보우기 차입니다
 STR_0578    :원형 고리로 둘러싸여 급강하와 하트라인 트위스트를 횡단하는 트랙을 달리는 차량입니다.
 STR_0579    :
-STR_0580    :90m 이상의 언덕을 부드럽게 오르내리는 거대한 철제 롤러코스터입니다.
+STR_0580    :90m 이상의 높이를 부드럽게 오르내리는 거대한 철제 롤러코스터입니다.
 STR_0581    :원형 모양의 좌석이 맨 위까지 끌어올려진 다음, 자유 낙하하며, 자기장에 의해 부드럽게 바닥에 정지합니다.
 STR_0582    :
 STR_0583    :
@@ -1711,9 +1711,9 @@ STR_2358    :유닛
 STR_2359    :실제 값
 STR_2360    :해상도:
 STR_2361    :땅 테두리를 부드럽게
-STR_2362    :{SMALLFONT}{BLACK}땅의 테두리를 부드럽게 표시합니다.
-STR_2363    :땅에 격자선 보이기
-STR_2364    :{SMALLFONT}{BLACK}땅에 격자선을 보여줍니다
+STR_2362    :{SMALLFONT}{BLACK}땅의 테두리를 부드럽게 표시합니다
+STR_2363    :땅에 격자선 표시
+STR_2364    :{SMALLFONT}{BLACK}땅에 격자선을 표시합니다
 STR_2365    :은행이 대출을 증가시키는 것을 거절했습니다!
 STR_2366    :섭씨 (°C)
 STR_2367    :화씨 (°F)
@@ -2020,7 +2020,7 @@ STR_2678    :???
 STR_2679    :???
 STR_2680    :모든 연구가 완료되었습니다
 STR_2681    :{MEDIUMFONT}{BLACK}돈 {CURRENCY} 늘리기
-STR_2684    :{SMALLFONT}{BLACK}손님 대규모로 불러오기
+STR_2684    :{SMALLFONT}{BLACK}손님을 대규모로 부릅니다
 STR_2685    :단일 노이즈 매개 변수
 STR_2686    :저:
 STR_2687    :고:
@@ -2620,7 +2620,7 @@ STR_3446    :순찰 영역 해제
 # New strings, cleaner
 STR_5120    :재정
 STR_5121    :연구
-STR_5122    :놀이기구를 (RCT1처럼) 트랙 종류 별로 선택
+STR_5122    :RCT1처럼 놀이기구를 트랙 종류 별로 선택
 STR_5123    :놀이기구 새 걸로
 STR_5125    :모두 파괴 가능
 STR_5126    :무작위 타이틀 음악
@@ -2933,9 +2933,9 @@ STR_5435    :세이브 이름 바꾸기
 STR_5436    :타이틀 시퀀스 편집하기...
 STR_5437    :선택된 세이브 없음
 STR_5438    :명령 에디터가 열려있을 때 변경할 수 없습니다
-STR_5439    :4초 이상의 기다림 명령은 재시작 명령이 필요합니다.
+STR_5439    :4초 이상의 기다림 명령은 재시작 명령이 필요합니다
 STR_5440    :커서가 게임 밖으로 나가면 전체 화면을 최소화
-STR_5441    :{SMALLFONT}{BLACK}놀이기구를 종류별로 구분합니다. (RCT1처럼)
+STR_5441    :{SMALLFONT}{BLACK}놀이기구를 RCT1처럼 종류별로 구분합니다
 STR_5442    :공원 등급 고정:
 STR_5443    :속도{MOVE_X}{87}{STRINGID}
 STR_5444    :속도:
@@ -3251,8 +3251,8 @@ STR_5790    :{SMALLFONT}{BLACK}RCT1식으로 돈을 받습니다.{NEWLINE}(예: 
 STR_5791    :{SMALLFONT}{BLACK}모든 놀이기구의 신뢰도를 100%로 설정하고{NEWLINE}건설 시점을 "올해"로 바꿉니다.
 STR_5792    :{SMALLFONT}{BLACK}고장난 놀이기구를 모두 고칩니다.
 STR_5793    :{SMALLFONT}{BLACK}놀이기구의 충돌 이력을 제거하여,{NEWLINE}손님들이 안전하지 않다고 불평하지 않게 만듭니다.
-STR_5794    :{SMALLFONT}{BLACK}일부 시나리오에서 공원에 이미 존재하는 놀이기구를 수정할 수 없게 해놓은 것을 해제해줍니다.
-STR_5795    :{SMALLFONT}{BLACK}손님들이 놀이기구의 격렬도가 아무리 높아도 그 놀이기구에 타도록 만듭니다.
+STR_5794    :{SMALLFONT}{BLACK}일부 시나리오에서 공원에 이미 존재하는 놀이기구를 수정할 수 없게 해놓은 것을 해제합니다.
+STR_5795    :{SMALLFONT}{BLACK}놀이기구의 격렬도가 아무리 높아도 손님들이 그 놀이기구에 타도록 만듭니다.
 STR_5796    :{SMALLFONT}{BLACK}공원의 문을 강제로 열거나 닫습니다.
 STR_5797    :{SMALLFONT}{BLACK}날씨를 선택한 날씨로 고정하고 바뀌지 않게 만듭니다.
 STR_5798    :{SMALLFONT}{BLACK}일시정지 상태에서 건설을 허용합니다.
@@ -3279,7 +3279,7 @@ STR_5817    :{SMALLFONT}{BLACK}게임 UI 크기 조절 방식을 설정합니다
 STR_5819    :{SMALLFONT}{BLACK}[하드웨어 디스플레이 설정 필요]{NEWLINE}스팀 인게임 오버레이가 열려있으면 게임을 일시정지시킵니다.
 STR_5820    :{SMALLFONT}{BLACK}전체 화면 모드에서 커서가 게임 밖으로 나가면 게임을 최소화시킵니다.
 STR_5822    :{SMALLFONT}{BLACK}낮밤을 순환하도록 설정합니다.{NEWLINE}낮밤이 바뀌는 데에는 한 달이 걸립니다.
-STR_5823    :{SMALLFONT}{BLACK}팻말의 영문을 대문자로 표시합니다. (RCT1처럼)
+STR_5823    :{SMALLFONT}{BLACK}RCT1처럼 팻말의 영문을 대문자로 표시합니다.
 STR_5824    :{SMALLFONT}{BLACK}폭풍이 칠 때 번개가 치는 효과를 끕니다.
 STR_5825    :{SMALLFONT}{BLACK}마우스 커서를 화면 밖으로 나가지 못하게 만듭니다.
 STR_5826    :{SMALLFONT}{BLACK}게임 화면에서 마우스 오른쪽 클릭으로 드래그할 때의 방향을 반대로 바꿉니다.
@@ -3298,8 +3298,8 @@ STR_5838    :{SMALLFONT}{BLACK}메인 메뉴에 재정 창을 위한 별도의 �
 STR_5839    :{SMALLFONT}{BLACK}메인 매뉴에 연구 및 개발 창을 위한 별도의 버튼을 표시합니다.
 STR_5840    :{SMALLFONT}{BLACK}메인 메뉴에 치트 창을 위한 별도의 버튼을 표시합니다.
 STR_5841    :{SMALLFONT}{BLACK}메인 메뉴에 최근 메시지 창을 위한 별도의 버튼을 표시합니다.
-STR_5842    :{SMALLFONT}{BLACK}시나리오를 (RCT2처럼) 난이도 별로 정렬하거나 (RCT1처럼) 출신 게임별로 정렬합니다.
-STR_5843    :{SMALLFONT}{BLACK}(RCT1 처럼) 시나리오를 클리어하면 다음 시나리오를 해제합니다.
+STR_5842    :{SMALLFONT}{BLACK}시나리오를 RCT2처럼 난이도별로 정렬하거나, RCT1처럼 출신 게임별로 정렬합니다.
+STR_5843    :{SMALLFONT}{BLACK}RCT1처럼 시나리오를 클리어하면 다음 시나리오를 해제합니다.
 STR_5844    :{SMALLFONT}{BLACK}멀티 플레이 서버에서 비동기화나 오류가 발생하여도 접속을 유지합니다.
 STR_5845    :{SMALLFONT}{BLACK}메인 메뉴에 디버깅 툴을 위한 버튼을 추가합니다.{NEWLINE}개발자 콘솔을 여는 키보드 단축키가 활성화됩니다.
 STR_5846    :{SMALLFONT}{BLACK}OpenRCT2의 자동 저장 빈도를 설정합니다.
@@ -3314,7 +3314,7 @@ STR_5854    :{SMALLFONT}{BLACK}놀이기구 음악 켜기/끄기
 STR_5855    :{SMALLFONT}{BLACK}전체화면, 창 모드, 전체화면 (창모드) 중에서 선택합니다.
 STR_5856    :{SMALLFONT}{BLACK}전체화면에서 사용할 게임 해상도를 설정합니다.
 STR_5857    :{SMALLFONT}{BLACK}게임 설정
-STR_5858    :{SMALLFONT}{BLACK}CPU 대신 GPU를 이용하여 화면을 표시합니다. 스크린 캡처 소프트웨어의 호환성을 향상해줍니다. 약간의 속도 저하가 발생할 수 있습니다.
+STR_5858    :{SMALLFONT}{BLACK}CPU 대신 GPU를 이용하여 화면을 표시합니다. 스크린 캡처 소프트웨어의 호환성을 향상시켜줍니다. 약간의 속도 저하가 발생할 수 있습니다.
 STR_5859    :{SMALLFONT}{BLACK}시각적으로 더 부드러운 게임 플레이를 위해 프레임 제한을 해제합니다. 설정을 끄면 게임이 40 FPS로 실행됩니다.
 STR_5860    :오리지널 트랙 표시 방식 전환
 STR_5861    :키 인증 실패
@@ -3398,8 +3398,8 @@ STR_5939    :공원 울타리 제거
 STR_5940    :공원 울타리 복구
 STR_5941    :{WINDOW_COLOUR_2}기본 높이:
 STR_5942    :{WINDOW_COLOUR_2}공원 이름: {BLACK}{STRINGID}
-STR_5943    :{WINDOW_COLOUR_2}추가: {BLACK}{STRINGID}
-STR_5944    :{WINDOW_COLOUR_2}추가: {BLACK}없음
+STR_5943    :{WINDOW_COLOUR_2}기물: {BLACK}{STRINGID}
+STR_5944    :{WINDOW_COLOUR_2}기물: {BLACK}없음
 STR_5945    :{WINDOW_COLOUR_2}연결된 면:
 STR_5946    :{WINDOW_COLOUR_2}놀이기구 종류: {BLACK}{STRINGID}
 STR_5947    :{WINDOW_COLOUR_2}놀이기구 ID: {BLACK}{COMMA16}
@@ -3515,8 +3515,8 @@ STR_6056    :{SMALLFONT}{BLACK}음소거
 STR_6057    :{SMALLFONT}{BLACK}메인 메뉴에 음소거를 설정할 수 있는 별도의 버튼을 표시합니다.
 STR_6058    :음소거
 STR_6059    :»
-STR_6060    :손님의 돈 사용을 애니메이션 효과로 표시
-STR_6061    :{SMALLFONT}{BLACK}손님들이 돈을 사용하면{NEWLINE}움직이는 효과로 표시해줍니다.
+STR_6060    :손님이 돈을 쓰면 화면에 표시
+STR_6061    :{SMALLFONT}{BLACK}손님들이 돈을 사용하면{NEWLINE}화면에 움직이는 글씨로 표시합니다.
 STR_6062    :{OUTLINE}{GREEN}+ {CURRENCY2DP}
 STR_6063    :{OUTLINE}{RED}- {CURRENCY2DP}
 STR_6064    :모든 땅 소유
@@ -3576,7 +3576,7 @@ STR_6117    :탑승객들은 한 바퀴를 운행하는 편안한 좌석에 앉�
 STR_6118    :큰 놀이기구를 탈 용기가 없는 사람들을 위한 얌전한 롤러코스터입니다.
 STR_6119    :높이 제한이 있지만, 값싸고 건설하기 쉬운 롤러코스터입니다.
 STR_6120    :{BABYBLUE}{STRINGID}에 새로운 차량이 추가되었습니다:{NEWLINE}{STRINGID}
-STR_6121    :{SMALLFONT}{BLACK}공원이 소유한 땅을 맵 끝까지 모든 방향으로 확장해줍니다.
+STR_6121    :{SMALLFONT}{BLACK}공원이 소유한 땅을 맵 끝까지 모든 방향으로 확장합니다.
 STR_6122    :이 시나리오에 롤러코스터가 충분히 많이 있지 않습니다!
 STR_6123    :공원에 사용된 오브젝트 불러오기 오류
 STR_6124    :오브젝트 이름
@@ -3658,7 +3658,7 @@ STR_6199    :날짜 설정
 STR_6200    :날짜 초기화
 STR_6201    :{MONTH}
 STR_6202    :가상 지면 표시
-STR_6203    :{SMALLFONT}{BLACK}이 설정을 켜면, Ctrl이나 Shift 키를 누르고 있을 때 오브젝트의 수직 설치에 도움이 되는 가상 지면을 표시해줍니다.
+STR_6203    :{SMALLFONT}{BLACK}이 설정을 켜면, Ctrl이나 Shift 키를 누르고 있을 때 오브젝트의 수직 설치에 도움이 되는 가상 지면을 표시합니다.
 STR_6204    :벽돌
 STR_6205    :철
 STR_6206    :회색 절벽
@@ -3773,6 +3773,11 @@ STR_6314    :{WINDOW_COLOUR_2}목표: {BLACK}{INT32}, {INT32} 인내심 {INT32}
 STR_6315    :{WINDOW_COLOUR_2}경로탐색 목표: {BLACK}{INT32}, {INT32}, {INT32} 방향 {INT32}
 STR_6316    :{WINDOW_COLOUR_2}경로탐색 기록:
 STR_6317    :{BLACK}{INT32}, {INT32}, {INT32} 방향 {INT32}
+STR_6318    :네트워크 비동기화가 감지되었습니다.{NEWLINE}로그 파일: {STRING}
+STR_6319    :{WINDOW_COLOUR_2}블록 브레이크 닫기
+STR_6320    :{WINDOW_COLOUR_2}파괴 불가
+STR_6321    :{WINDOW_COLOUR_2}기물 부서짐
+STR_6322    :{WINDOW_COLOUR_2}스프라이트 ID: {BLACK}{INT32}
 
 
 #############

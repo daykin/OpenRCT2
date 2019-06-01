@@ -528,7 +528,7 @@ int32_t game_do_command_p(
                 {
                     // Create a +/- money text effect
                     if (cost != 0 && game_is_not_paused())
-                        money_effect_create(cost);
+                        rct_money_effect::Create(cost);
                 }
             }
 
@@ -1226,6 +1226,6 @@ GAME_COMMAND_POINTER* new_game_command_table[GAME_COMMAND_COUNT] = {
     game_command_pickup_staff,
     nullptr,
     game_command_modify_tile,
-    game_command_edit_scenario_options,
+    nullptr,
     NULL,
 };

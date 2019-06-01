@@ -2041,7 +2041,7 @@ void Guest::SpendMoney(money16& peep_expend_type, money32 amount)
         //      needing to be synchronised
         if (network_get_mode() == NETWORK_MODE_NONE && !gOpenRCT2Headless)
         {
-            money_effect_create_at(amount, x, y, z, true);
+            rct_money_effect::CreateAt(amount, x, y, z, true);
         }
     }
 
@@ -6278,6 +6278,11 @@ static bool peep_find_ride_to_look_at(Peep* peep, uint8_t edge, uint8_t* rideToV
     surfaceElement = map_get_surface_element_at({ peep->next_x, peep->next_y });
 
     tileElement = surfaceElement;
+    if (tileElement == nullptr)
+    {
+        return false;
+    }
+
     do
     {
         // Ghosts are purely this-client-side and should not cause any interaction,
@@ -6312,6 +6317,11 @@ static bool peep_find_ride_to_look_at(Peep* peep, uint8_t edge, uint8_t* rideToV
     surfaceElement = map_get_surface_element_at({ x, y });
 
     tileElement = surfaceElement;
+    if (tileElement == nullptr)
+    {
+        return false;
+    }
+
     do
     {
         // Ghosts are purely this-client-side and should not cause any interaction,
@@ -6541,6 +6551,11 @@ static bool peep_find_ride_to_look_at(Peep* peep, uint8_t edge, uint8_t* rideToV
 
     // TODO: extract loop A
     tileElement = surfaceElement;
+    if (tileElement == nullptr)
+    {
+        return false;
+    }
+
     do
     {
         // Ghosts are purely this-client-side and should not cause any interaction,
